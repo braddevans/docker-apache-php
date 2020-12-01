@@ -1,5 +1,5 @@
 FROM ubuntu:precise
-MAINTAINER romeOz <serggalka@gmail.com>
+MAINTAINER slicedbread69 <braddevans123@gmail.com>
 
 ENV PHP_VERSION=5.3 \
 	OS_LOCALE="en_US.UTF-8"

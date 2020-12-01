@@ -1,5 +1,5 @@
 FROM ubuntu:precise
-MAINTAINER romeOz <serggalka@gmail.com>
+MAINTAINER slicedbread69 <braddevans123@gmail.com>
 
 ENV OS_LOCALE="en_US.UTF-8"
 RUN locale-gen ${OS_LOCALE}

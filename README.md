@@ -1,3 +1,5 @@
+### forked from https://github.com/romeOz/docker-apache-php
+
 Table of Contents
 -------------------
 
@@ -16,19 +18,19 @@ Installation
  * Pull the latest version of the image.
  
 ```bash
-docker pull romeoz/docker-apache-php
+docker pull slicedbread69/docker-apache-php
 ```
 
 or other versions (7.3, 7.2, 7.1, 7.0, 5.6, 5.5, 5.4 or 5.3):
 
 ```bash
-docker pull romeoz/docker-apache-php:7.1
+docker pull slicedbread69/docker-apache-php:7.1
 ```
 
 Alternately you can build the image yourself.
 
 ```bash
-git clone https://github.com/romeoz/docker-apache-php.git
+git clone https://github.com/slicedbread69/docker-apache-php.git
 cd docker-apache-php
 docker build -t="$USER/docker-apache-php" .
 ```
@@ -39,7 +41,7 @@ Quick Start
 Run the application container:
 
 ```bash
-docker run --name app -d -p 8080:80 romeoz/docker-apache-php
+docker run --name app -d -p 8080:80 slicedbread69/docker-apache-php
 ```
 
 The simplest way to login to the app container is to use the `docker exec` command to attach a new process to the running container.
@@ -58,7 +60,7 @@ The updated run command looks like this.
 ```bash
 docker run --name app -d -p 8080:80 \
   -v /host/to/path/app:/var/www/app/ \
-  romeoz/docker-apache-php
+  slicedbread69/docker-apache-php
 ```
 
 This will make the development.
@@ -71,7 +73,7 @@ As an example, will link with RDBMS PostgreSQL.
 ```bash
 docker network create pg_net
 
-docker run --name db -d romeoz/docker-postgresql
+docker run --name db -d slicedbread69/docker-postgresql
 ```
 
 Run the application container:
@@ -80,7 +82,7 @@ Run the application container:
 docker run --name app -d -p 8080:80 \
   --net pg_net \
   -v /host/to/path/app:/var/www/app/ \
-  romeoz/docker-apache-php
+  slicedbread69/docker-apache-php
 ```
 
 Adding PHP-extension
@@ -93,7 +95,7 @@ You can use one of two choices to install the required php-extensions:
 2. Create your container on based the current. Сontents Dockerfile:
 
 ```
-FROM romeoz/docker-apache-php:5.6
+FROM slicedbread69/docker-apache-php:5.6
 
 RUN apt-get update \
     && apt-get install -y php-mongo \
