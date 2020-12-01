@@ -21,7 +21,7 @@ Installation
 docker pull slicedbread69/docker-apache-php
 ```
 
-or other versions (7.3, 7.2, 7.1, 7.0, 5.6, 5.5, 5.4 or 5.3):
+or other versions (7.4, 7.3, 7.2, 7.1, 7.0, 5.6, 5.5, 5.4 or 5.3):
 
 ```bash
 docker pull slicedbread69/docker-apache-php:7.1
